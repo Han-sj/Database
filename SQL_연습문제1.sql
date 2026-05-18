@@ -82,13 +82,13 @@ select * from product;
 select company from product;
 
 # 실습 1-8
-select company from product group by company;
+select distinct company from product;
 
 # 실습 1-9
 select prodName, price from product;
 
 # 실습 1-10
-select prodName, price + 500 from product;
+select prodName, price + 500 as 조정단가 from product;
 
 # 실습 1-11
 select prodName, stock, price from product where company = '오리온';
